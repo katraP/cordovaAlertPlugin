@@ -29,7 +29,7 @@ public class Alert extends CordovaPlugin {
                                   final String message,
                                   final String buttonLabel,
                                   final CallbackContext callbackContext) {
-    new AlertDialog.Builder(cordova.getActivity(), AlertDialog.Theme_Material_Light_Dialog_Alert)
+    new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT)
     .setTitle(title)
     .setMessage(message)
     .setCancelable(false)
